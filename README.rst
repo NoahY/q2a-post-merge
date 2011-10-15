@@ -9,7 +9,9 @@ This is a plugin for **Question2Answer** that allows admin to merge questions.
 --------
 Features
 --------
-- merge questions
+- moves comments and answers from one question to another, then deletes the first question
+- ajax call to show which posts are affected
+- store redirect info for deleted questions in postmeta
 
 ------------
 Installation
@@ -32,7 +34,7 @@ Installation
 ----------
 Disclaimer
 ----------
-This is **alpha** code.  It may not work exactly as expected.  Refunds will not be given.  If it breaks, you get to keep both parts.
+This is **alpha** code.  It may not work as expected.  It may corrupt your data.  Refunds will not be given.  If it breaks, you get to keep both parts.
 
 -------
 Release
