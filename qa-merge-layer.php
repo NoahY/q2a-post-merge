@@ -5,7 +5,7 @@
 	// theme replacement functions
 		
 		function doctype() {
-			if($this->content['error'] == qa_lang_html('main/page_not_found') && preg_match('/^[0-9]+\//',$this->request) !== false) {
+			if(@$this->content['error'] == qa_lang_html('main/page_not_found') && preg_match('/^[0-9]+\//',$this->request) !== false) {
 				$pid = preg_replace('/\/.*/','',$this->request);
 				$merged = qa_db_read_one_assoc(
 					qa_db_query_sub(
