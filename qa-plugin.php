@@ -3,6 +3,7 @@
 /*
 	Plugin Name: Merge
 	Plugin URI: https://github.com/NoahY/q2a-merge
+	Plugin Update Check URI: https://github.com/NoahY/q2a-merge/raw/master/qa-plugin.php
 	Plugin Description: Provides merging capabilities
 	Plugin Version: 0.1a
 	Plugin Date: 2011-10-15
