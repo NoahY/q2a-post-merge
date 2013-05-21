@@ -3,7 +3,7 @@
 	class qa_html_theme_layer extends qa_html_theme_base {
 
 		function doctype() {
-			if(qa_post_text('merge_from')) {
+			if(qa_post_text('merge_from') && qa_get_logged_in_level() >= QA_USER_LEVEL_ADMIN) {
 				$merged = qa_merge_do_merge();
 				if($merged === true)
 					qa_redirect(qa_q_request(qa_post_text('merge_to'),null),array('merged'=>qa_post_text('merge_from')));
