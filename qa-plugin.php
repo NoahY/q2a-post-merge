@@ -23,6 +23,8 @@
 	
 	qa_register_plugin_module('module', 'qa-php-widget.php', 'qa_merge_admin', 'Merge Admin');
 
+	// merge button on duplicate question page (only for admin)
+	qa_register_plugin_layer('qa-merge-layer-ondup.php', 'Merge Button for Duplicate Question');
 
 /*
 	Omit PHP closing tag to help avoid accidental output
